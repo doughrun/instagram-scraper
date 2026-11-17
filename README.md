@@ -15,9 +15,9 @@ A read-only [Claude Code](https://code.claude.com) plugin that fetches posts, re
 
 [Install](#installation) · [What you can ask](#what-you-can-ask) · [How it works](#how-it-works) · [Commands](#command-reference) · [Privacy & safety](#privacy--safety) · [Troubleshooting](#troubleshooting) · [Contributing](CONTRIBUTING.md)
 
-<!-- DEMO-GIF-SLOT: replace this comment with
-<img src="assets/demo.gif" alt="Claude answering a question about an Instagram reel with Instagram Scraper" width="820" />
--->
+<img src="assets/demo.gif" alt="Claude Code answering a question about an Instagram reel with Instagram Scraper: it fetches the reel, reads the video map, views one contact sheet, and summarizes what is said, shown and commented" width="820" />
+
+<sub>Condensed replay of a real session: Claude reads the video map and views a single contact sheet to answer.</sub>
 
 </div>
 
