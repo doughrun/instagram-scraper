@@ -14,11 +14,6 @@ A read-only [Claude Code](https://code.claude.com) plugin that fetches posts, re
 [![Platforms](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](#requirements)
 
 [Install](#installation) · [What you can ask](#what-you-can-ask) · [How it works](#how-it-works) · [Commands](#command-reference) · [Privacy & safety](#privacy--safety) · [Troubleshooting](#troubleshooting) · [Contributing](CONTRIBUTING.md)
-
-<img src="assets/demo.gif" alt="Claude Code answering a question about an Instagram reel with Instagram Scraper: it fetches the reel, reads the video map, views one contact sheet, and summarizes what is said, shown and commented" width="820" />
-
-<sub>Condensed replay of a real session: Claude reads the video map and views a single contact sheet to answer.</sub>
-
 </div>
 
 ---
@@ -55,6 +50,12 @@ Write down the recipe from this cooking reel, including the quantities he says o
 
 Claude decides which steps it needs: fetch the post, read the video map, glance at a contact sheet,
 zoom into one frame. You don't have to name the plugin or any command.
+
+### See it in action
+
+<img src="assets/demo.gif" alt="Claude Code answering a question about an Instagram reel with Instagram Scraper: it fetches the reel, reads the video map, views one contact sheet, and summarizes what is said, shown and commented" width="820" />
+
+<sub>Condensed replay of a real session: Claude reads the video map and views a single contact sheet to answer.</sub>
 
 ## How it works
 
