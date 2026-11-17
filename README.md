@@ -51,11 +51,9 @@ Write down the recipe from this cooking reel, including the quantities he says o
 Claude decides which steps it needs: fetch the post, read the video map, glance at a contact sheet,
 zoom into one frame. You don't have to name the plugin or any command.
 
-### See it in action
+### What Claude actually sees
 
-<img src="assets/demo.gif" alt="How it works in three steps: you ask about an Instagram reel, the plugin downloads it and reads its on-screen text and speech on your PC, and Claude answers after looking at a single image" />
-
-<sub>From a real session on an 18-second reel, condensed.</sub>
+<img src="assets/what-claude-sees.png" alt="Left: all 150 frames of a 15-second reel, about 67,000 image tokens. Right: what Instagram Scraper gives Claude instead: one contact sheet and a short text map of on-screen text and speech, about 1,600 tokens." />
 
 ## How it works
 
