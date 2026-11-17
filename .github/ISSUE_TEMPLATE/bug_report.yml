@@ -1,0 +1,55 @@
+name: Bug report
+description: Something broke or returned wrong data
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! **Please don't paste other people's Instagram content, usernames, comments, or your session cookie.** Redact them, e.g. `@user_a`, `<comment text>`.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you ask Claude, or which command did you run, and what went wrong?
+      placeholder: "Ran `post <reel link>` and comments came back empty, though the post has 300 comments."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: dropdown
+    id: target
+    attributes:
+      label: What kind of content?
+      multiple: true
+      options: [Reel, Video post, Image post, Carousel, Profile, Comments / replies, Login / session, Video map / OCR / transcript, Other]
+  - type: textarea
+    id: output
+    attributes:
+      label: Error output
+      description: The JSON error (e.g. `{"error": "not_found", ...}`) and the last lines of progress output. Redact personal content.
+      render: text
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "Windows 11 / macOS 15 / Ubuntu 24.04"
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Plugin version (see /plugin), Claude Code version (`claude --version`), browser used (Edge/Chrome/Chromium)
+      placeholder: "plugin 0.1.0, Claude Code 2.x, Edge"
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I ran `status` and the session is logged in (or this is a login problem)
+        - label: I removed other people's content, usernames and any cookies from this report
+          required: true

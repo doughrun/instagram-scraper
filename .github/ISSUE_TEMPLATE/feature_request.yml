@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest an idea or improvement
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This project is **read-only by design**. Requests to like, comment, follow, post or message on Instagram won't be accepted.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The question you'd like to ask Claude, or the analysis you want, that doesn't work well today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would help?
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered

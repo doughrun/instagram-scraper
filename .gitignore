@@ -1,0 +1,43 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+dist/
+build/
+*.egg-info/
+
+# --- Secrets / sessions (never commit an Instagram session) ---
+.env
+.env.*
+*.session
+session.json
+cookies.json
+cookies.txt
+browser-profile/
+
+# --- Local scraped data / debug dumps (may contain other people's content) ---
+spike/
+*.mp4
+*.mov
+dumps/
+*-workspace/
+
+# --- Maintainer-local notes (not part of the published skill) ---
+CLAUDE.md
+CLAUDE.local.md
+docs/build-plan.md
+docs/superpowers/
+.claude/
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.log

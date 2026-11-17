@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Tests (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Unit tests
+        run: uv run --python 3.12 --with pytest --with platformdirs --with pillow --with filelock --with httpx pytest -q tests
+
+      - name: CLI dependencies resolve and import (smoke test)
+        run: uv run --python 3.12 plugins/instagram-scraper/skills/instagram-scraper/scripts/ig.py --help
+
+  manifests:
+    name: Plugin manifests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JSON and required fields
+        run: |
+          python3 - <<'EOF'
+          import json, pathlib, re, sys
+          mk = json.loads(pathlib.Path(".claude-plugin/marketplace.json").read_text())
+          pj = json.loads(pathlib.Path("plugins/instagram-scraper/.claude-plugin/plugin.json").read_text())
+          skill = pathlib.Path("plugins/instagram-scraper/skills/instagram-scraper/SKILL.md").read_text()
+          errors = []
+          entry = next((p for p in mk["plugins"] if p["name"] == pj["name"]), None)
+          if not entry: errors.append("plugin missing from marketplace.json")
+          elif entry.get("version") != pj.get("version"): errors.append("version mismatch between plugin.json and marketplace.json")
+          if not pathlib.Path(entry["source"]).is_dir(): errors.append(f"marketplace source {entry['source']} not found")
+          fm = re.search(r"^---\n(.*?)\n---", skill, re.S)
+          if not fm or not re.search(r"^name:\s*\S", fm.group(1), re.M) or not re.search(r"^description:\s*\S", fm.group(1), re.M):
+              errors.append("SKILL.md frontmatter needs name and description")
+          print("\n".join(errors) or "manifests OK")
+          sys.exit(1 if errors else 0)
+          EOF

@@ -1,0 +1,14 @@
+{
+  "name": "instagram-scraper",
+  "displayName": "Instagram Scraper",
+  "version": "0.1.0",
+  "description": "Read-only Instagram for Claude: posts, reels, carousels, profiles, comments, media download, and token-efficient local video analysis (scene map, OCR, transcript, contact sheets, zoom).",
+  "author": {
+    "name": "doughrun",
+    "url": "https://github.com/doughrun"
+  },
+  "homepage": "https://github.com/doughrun/instagram-scraper",
+  "repository": "https://github.com/doughrun/instagram-scraper",
+  "license": "MIT",
+  "keywords": ["instagram", "video", "transcription", "ocr", "social-media", "research"]
+}

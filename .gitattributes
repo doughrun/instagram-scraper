@@ -1,0 +1,63 @@
+# Normalize line endings on commit; check out with LF on every OS.
+# Without this file, a Windows clone with default core.autocrlf=true silently
+# rewrites text files to CRLF on checkout, which breaks shebang lines
+# (#!/usr/bin/env node), bundler cache hashes, shell scripts, and lockfile
+# diffs. Lock LF everywhere.
+
+* text=auto eol=lf
+
+# Explicit text — defensive against editors / tools that misdetect.
+*.md     text eol=lf
+*.mdx    text eol=lf
+*.json   text eol=lf
+*.jsonc  text eol=lf
+*.ts     text eol=lf
+*.tsx    text eol=lf
+*.js     text eol=lf
+*.jsx    text eol=lf
+*.mjs    text eol=lf
+*.cjs    text eol=lf
+*.css    text eol=lf
+*.html   text eol=lf
+*.svg    text eol=lf
+*.toml   text eol=lf
+*.yaml   text eol=lf
+*.yml    text eol=lf
+*.py     text eol=lf
+*.sh     text eol=lf
+*.sql    text eol=lf
+*.lock   text eol=lf
+.env.example text eol=lf
+.gitignore   text eol=lf
+.gitattributes text eol=lf
+
+# Bun / pnpm / yarn lockfiles (any of these — text formats).
+bun.lock           text eol=lf
+package-lock.json  text eol=lf
+yarn.lock          text eol=lf
+pnpm-lock.yaml     text eol=lf
+
+# Binary — no normalization, no diff churn.
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.webp   binary
+*.avif   binary
+*.bmp    binary
+*.ttf    binary
+*.otf    binary
+*.woff   binary
+*.woff2  binary
+*.eot    binary
+*.pdf    binary
+*.zip    binary
+*.gz     binary
+*.tar    binary
+*.mp3    binary
+*.mp4    binary
+*.wav    binary
+*.mov    binary
+*.psd    binary
+*.ai     binary

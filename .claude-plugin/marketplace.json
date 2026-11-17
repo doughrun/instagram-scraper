@@ -1,0 +1,19 @@
+{
+  "name": "instagram-scraper",
+  "owner": {
+    "name": "doughrun",
+    "url": "https://github.com/doughrun"
+  },
+  "metadata": {
+    "description": "Instagram Scraper: read-only Instagram access for Claude Code — posts, reels, profiles, comments, and local video analysis."
+  },
+  "plugins": [
+    {
+      "name": "instagram-scraper",
+      "source": "./plugins/instagram-scraper",
+      "description": "Read-only Instagram for Claude: posts, reels, carousels, profiles, comments, media download, and token-efficient local video analysis (scene map, OCR, transcript, contact sheets, zoom).",
+      "version": "0.1.0",
+      "category": "research"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+[
+  {"query": "can u check this reel and tell me what she's saying https://www.instagram.com/reel/C9xYz12AbCd/ my spanish isnt great", "should_trigger": true},
+  {"query": "I'm vetting influencers for our skincare brand launch. Pull up @glowwithmaya on instagram and tell me what her last few posts are about, how engagement looks, and whether she's done paid partnerships before", "should_trigger": true},
+  {"query": "what are people saying in the comments on this? instagram.com/p/DAbc123xyz9/ my manager thinks the campaign flopped and I want to know if the comments back that up", "should_trigger": true},
+  {"query": "Summarize this carousel for me, the slides have a lot of text on them: https://www.instagram.com/p/C8QwErTyUiO/?img_index=1", "should_trigger": true},
+  {"query": "compare natgeo and bbcearth on IG - who posted more reels lately and which ones got more likes?", "should_trigger": true},
+  {"query": "There's a cooking video on instagram I saved (https://www.instagram.com/reel/DBq7Lm2PzXa/), can you write down the recipe including the quantities he mentions out loud?", "should_trigger": true},
+  {"query": "is the vacuum in this video at around 0:12 an actual Dyson or a knockoff? https://www.instagram.com/reel/C7tYhJ8kLmN/", "should_trigger": true},
+  {"query": "my competitor @urbanroastco keeps posting reels that do really well. what hooks and hashtags are they using? we're a small coffee roaster in haifa", "should_trigger": true},
+  {"query": "transcribe the audio from this IG reel so I can add subtitles to my repost https://www.instagram.com/reel/DCa1b2c3d4e/", "should_trigger": true},
+  {"query": "check my friend's insta, his handle is dan.levi.photo - does he have a website link in his bio and how many followers does he have now?", "should_trigger": true},
+  {"query": "write me 5 instagram caption ideas for a photo of my dog at the beach, something funny but not cringe", "should_trigger": false},
+  {"query": "how do I get an Instagram Graph API access token for my business account? I'm building a Node app that schedules posts", "should_trigger": false},
+  {"query": "what's the best time of day to post on instagram for a small bakery in tel aviv? we mostly sell to locals", "should_trigger": false},
+  {"query": "help me build an instagram-style photo grid component in react with tailwind, 3 columns, square thumbnails, hover shows like count", "should_trigger": false},
+  {"query": "this tiktok has a recipe I want: https://www.tiktok.com/@chefmike/video/7312345678901234567 can you write down what he says", "should_trigger": false},
+  {"query": "draft a polite DM I can send to an instagram influencer asking what she charges for a sponsored reel", "should_trigger": false},
+  {"query": "pull the replies to the latest post from @nasa on twitter/x and tell me the general sentiment", "should_trigger": false}
+]
