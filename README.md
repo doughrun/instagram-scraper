@@ -15,6 +15,10 @@ A read-only [Claude Code](https://code.claude.com) plugin that fetches posts, re
 
 [Install](#installation) · [What you can ask](#what-you-can-ask) · [How it works](#how-it-works) · [Commands](#command-reference) · [Privacy & safety](#privacy--safety) · [Troubleshooting](#troubleshooting) · [Contributing](CONTRIBUTING.md)
 
+<!-- DEMO-GIF-SLOT: replace this comment with
+<img src="assets/demo.gif" alt="Claude answering a question about an Instagram reel with Instagram Scraper" width="820" />
+-->
+
 </div>
 
 ---
